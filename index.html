@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Clínica Comportar — Psicologia Clínica | Naidionara Maschio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Psicoterapia individual e atendimento para idosos em Dois Vizinhos/PR e online para todo o Brasil. Naidionara Maschio (CRP 08/42488). Abordagem em Análise do Comportamento." />
+  <meta name="author" content="Naidionara Maschio" />
+  <meta name="theme-color" content="#1E3A5F" />
+  <link rel="canonical" href="https://therapy-welcome-page.lovable.app/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:url" content="https://therapy-welcome-page.lovable.app/" />
+  <meta property="og:title" content="Clínica Comportar — Psicologia Clínica | Naidionara Maschio" />
+  <meta property="og:description" content="Psicoterapia presencial em Dois Vizinhos/PR e online. Naidionara Maschio (CRP 08/42488). Análise do Comportamento, atendimento para adultos e idosos e consultoria em R&S." />
+  <meta property="og:image" content="https://therapy-welcome-page.lovable.app/images/logo.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Clínica Comportar — Psicologia Clínica | Naidionara Maschio" />
+  <meta name="twitter:description" content="Psicoterapia presencial em Dois Vizinhos/PR e online para todo o Brasil. Naidionara Maschio (CRP 08/42488). Análise do Comportamento." />
+  <meta name="twitter:image" content="https://therapy-welcome-page.lovable.app/images/logo.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Tipografia Inter (única dependência externa permitida) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Folha de Estilos Principal -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Dados Estruturados Schema.org (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Clínica Comportar — Psicologia Clínica",
+    "image": "https://therapy-welcome-page.lovable.app/images/logo.jpg",
+    "telephone": "+55-54-99701-1417",
+    "email": "naidionaramaschio.psi@gmail.com",
+    "url": "https://therapy-welcome-page.lovable.app/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Espírito Santo, 103",
+      "addressLocality": "Dois Vizinhos",
+      "addressRegion": "PR",
+      "addressCountry": "BR"
+    },
+    "openingHours": "Mo-Fr 18:00-21:00",
+    "priceRange": "$$",
+    "founder": {
+      "@type": "Person",
+      "name": "Naidionara Maschio",
+      "jobTitle": "Psicóloga clínica e organizacional",
+      "identifier": "CRP 08/42488"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Skip Cloud container -->
+  <div id="root"></div>
+  <!-- @skip-protected: Do not remove. Required for app features. -->
+  <script src="https://goskip.dev/skip.js"></script>
+  <!-- @skip-protected: Do not remove. App entrypoint. -->
+  <script type="module" src="/src/main.tsx"></script>
+
+  <!-- Acessibilidade: atalho para o conteúdo principal -->
+  <a href="#conteudo-principal" class="skip-to-content">Pular para o conteúdo principal</a>
+
+  <!-- ======================================================================
+       1. Header Fixo com Efeito Glass
+       ====================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="#inicio" class="brand-link" aria-label="Clínica Comportar - Página Inicial">
+        <img src="images/logo.jpg" alt="Logo Clínica Comportar - Cérebro estilizado com folhagem e iniciais NM" class="brand-logo" width="44" height="44" />
+        <div class="brand-texts">
+          <span class="brand-name">Clínica Comportar</span>
+          <span class="brand-tag">Psicologia Clínica</span>
+        </div>
+      </a>
+
+      <!-- Menu Desktop -->
+      <nav class="site-nav" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link">Início</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre Mim</a></li>
+          <li><a href="#abordagem" class="nav-link">Abordagem</a></li>
+          <li><a href="#servicos" class="nav-link">Serviços</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botão de Agendamento Desktop -->
+      <div class="header-actions">
+        <a href="https://wa.me/5554997011417?text=Ol%C3%A1%2C%20Naidionara!%20Vim%20pelo%20site%20Cl%C3%ADnica%20Comportar%20e%20gostaria%20de%20agendar%20minha%20primeira%20consulta." target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          Agendar Consulta
+        </a>
+      </div>
+
+      <!-- Botão Hambúrguer Mobile -->
+      <button type="button" class="nav-toggle" id="menu-toggle" aria-label="Abrir menu de navegação" aria-controls="mobile-menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menu Mobile Deslizante -->
+  <div class="mobile-nav-overlay" id="mobile-overlay" aria-hidden="true"></div>
+  <aside class="mobile-nav-panel" id="mobile-menu" aria-label="Menu móvel">
+    <ul class="mobile-nav-list">
+      <li><a href="#inicio" class="mobile-nav-link">Início</a></li>
+      <li><a href="#sobre" class="mobile-nav-link">Sobre Mim</a></li>
+      <li><a href="#abordagem" class="mobile-nav-link">Abordagem</a></li>
+      <li><a href="#servicos" class="mobile-nav-link">Serviços</a></li>
+      <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+      <li><a href="#contato" class="mobile-nav-link">Contato</a></li>
+    </ul>
+    <a href="https://wa.me/5554997011417?text=Ol%C3%A1%2C%20Naidionara!%20Vim%20pelo%20site%20Cl%C3%ADnica%20Comportar%20e%20gostaria%20de%20agendar%20minha%20primeira%20consulta." target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;">
+      Agendar Consulta
+    </a>
+  </aside>
+
+  <!-- Conteúdo Principal -->
+  <main id="conteudo-principal">
+
+    <!-- ======================================================================
+         2. Hero Section (#inicio)
+         ====================================================================== -->
+    <section id="inicio" class="hero-section" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content reveal">
+            <div class="hero-badge-wrap">
+              <span class="badge">
+                <span class="badge-dot"></span>
+                Atendimento presencial e online
+              </span>
+            </div>
+
+            <h1 id="hero-title" class="hero-title">
+              Cuidado psicológico baseado em ciência e <em>acolhimento humano</em>.
+            </h1>
+
+            <p class="hero-slogan">
+              Espaço seguro e estruturado para compreender padrões comportamentais, superar angústias e construir uma vida com mais autonomia, equilíbrio e significado.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="https://wa.me/5554997011417?text=Ol%C3%A1%2C%20Naidionara!%20Vim%20pelo%20site%20Cl%C3%ADnica%20Comportar%20e%20gostaria%20de%20agendar%20minha%20primeira%20consulta." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+                Agendar via WhatsApp
+              </a>
+              <a href="#servicos" class="btn btn-secondary">Conhecer os Serviços</a>
+            </div>
+
+            <div class="hero-facts">
+              <div class="hero-fact-item">
+                <div class="hero-fact-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <span class="hero-fact-text">Seg–Sex após as 18h</span>
+              </div>
+
+              <div class="hero-fact-item">
+                <div class="hero-fact-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <span class="hero-fact-text">50min por sessão</span>
+              </div>
+
+              <div class="hero-fact-item">
+                <div class="hero-fact-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                </div>
+                <span class="hero-fact-text">100% sigiloso</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Lateral com Diferenciais -->
+          <div class="hero-card reveal">
+            <div class="hero-card-header">
+              <img src="images/psicologa.jpg" alt="Foto profissional de Naidionara Maschio" class="hero-card-avatar" width="60" height="60" />
+              <div>
+                <div class="hero-card-name">Naidionara Maschio</div>
+                <div class="hero-card-role">Psicóloga Clínica e Organizacional · CRP 08/42488</div>
+              </div>
+            </div>
+
+            <blockquote class="hero-quote">
+              "Compreender a função do comportamento é a chave para transformar sofrimento em autonomia e clareza de caminhos."
+            </blockquote>
+
+            <div class="hero-checklist">
+              <div class="hero-check-item">
+                <div class="check-icon" aria-hidden="true">✓</div>
+                <span>Atendimento individualizado para adultos e idosos</span>
+              </div>
+              <div class="hero-check-item">
+                <div class="check-icon" aria-hidden="true">✓</div>
+                <span>Sessões estruturadas pela Análise do Comportamento</span>
+              </div>
+              <div class="hero-check-item">
+                <div class="check-icon" aria-hidden="true">✓</div>
+                <span>Modalidade presencial em Dois Vizinhos/PR e online</span>
+              </div>
+              <div class="hero-check-item">
+                <div class="check-icon" aria-hidden="true">✓</div>
+                <span>Consultoria corporativa e seleção profissional</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. Sobre Mim (#sobre)
+         ====================================================================== -->
+    <section id="sobre" class="section-padding bg-light" aria-labelledby="sobre-title">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">Trajetória e Prática</span>
+          <h2 id="sobre-title" class="section-title">Sobre Mim</h2>
+          <p class="section-subtitle">
+            Compromisso ético, fundamentação científica sólida e uma escuta sensível para acompanhar você em cada etapa do seu desenvolvimento.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-photo-wrap reveal">
+            <div class="about-photo-frame">
+              <img src="images/psicologa.jpg" alt="Naidionara Maschio, psicóloga clínica e organizacional, CRP 08/42488" class="about-photo" width="440" height="550" />
+            </div>
+            <div class="about-crp-badge">
+              <span class="about-crp-title">Registro Profissional</span>
+              <span class="about-crp-value">CRP 08/42488</span>
+            </div>
+          </div>
+
+          <div class="about-content reveal">
+            <h3 style="font-size: 1.6rem; color: var(--deep); font-weight: 700;">Naidionara Maschio</h3>
+            <p style="color: var(--deep-soft); font-weight: 600; margin-top: -12px;">Psicóloga clínica e organizacional</p>
+
+            <p class="about-bio-p">
+              Na prática clínica, ofereço um espaço acolhedor e seguro voltado para o atendimento de adultos e idosos. Minha missão é proporcionar uma escuta sem julgamentos, onde cada indivíduo possa expressar suas dores, reconhecer suas potencialidades e construir estratégias sólidas para enfrentar desafios cotidianos e emocionais.
+            </p>
+
+            <p class="about-bio-p">
+              Minha atuação é integralmente embasada na Análise do Comportamento, uma abordagem que estuda as relações entre as ações do ser humano e o ambiente ao seu redor. Através da análise funcional, investigamos não apenas os sintomas, mas as contingências que mantêm determinados padrões, promovendo mudanças sustentáveis e conscientes.
+            </p>
+
+            <p class="about-bio-p">
+              Além do consultório clínico, atuo na psicologia organizacional oferecendo consultoria especializada em recrutamento e seleção (R&S). Conectar o perfil psicológico e comportamental dos candidatos aos valores e necessidades de cada organização potencializa equipes mais integradas, produtivas e saudáveis.
+            </p>
+
+            <div>
+              <div class="about-tags-title">Principais Áreas de Atuação</div>
+              <div class="about-tags-list" style="margin-top: 10px;">
+                <span class="tag-item">Ansiedade</span>
+                <span class="tag-item">Autoconhecimento</span>
+                <span class="tag-item">Idosos</span>
+                <span class="tag-item">Luto</span>
+                <span class="tag-item">Estresse e burnout</span>
+                <span class="tag-item">Recrutamento e seleção</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. Abordagem Terapêutica (#abordagem)
+         ====================================================================== -->
+    <section id="abordagem" class="section-padding" aria-labelledby="abordagem-title">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">Fundamentação Científica</span>
+          <h2 id="abordagem-title" class="section-title">Análise do Comportamento</h2>
+          <p class="section-subtitle">
+            Uma abordagem baseada em evidências que investiga as contingências e a funcionalidade das ações humanas.
+          </p>
+        </div>
+
+        <div class="approach-explanation reveal">
+          <p>
+            A <strong>Análise do Comportamento</strong> compreende o ser humano como um organismo ativo que interage continuamente com seu meio social, histórico e cultural. Alicerçada nos princípios científicos do behaviorismo radical desenvolvidos por B. F. Skinner, a abordagem não busca rotular pessoas, mas sim compreender por que agimos da maneira como agimos: quais contextos antecedem nossos comportamentos e quais consequências os mantêm. Com esse entendimento, paciente e psicóloga colaboram para construir novos repertórios de resposta que gerem bem-estar, autonomia e alívio do sofrimento psicológico.
+          </p>
+        </div>
+
+        <div class="approach-cards-grid">
+          
+          <article class="approach-card reveal">
+            <div class="approach-number">01</div>
+            <h3 class="approach-card-title">Acolhimento</h3>
+            <p class="approach-card-text">
+              Construção de uma relação terapêutica empática, segura e livre de julgamentos, onde sua história de vida e seus sentimentos são respeitados com total sigilo.
+            </p>
+          </article>
+
+          <article class="approach-card reveal">
+            <div class="approach-number">02</div>
+            <h3 class="approach-card-title">Análise funcional</h3>
+            <p class="approach-card-text">
+              Identificação clara das relações entre sentimentos, pensamentos, ações e o contexto em que ocorrem, revelando a função real de cada padrão que gera incômodo ou dor.
+            </p>
+          </article>
+
+          <article class="approach-card reveal">
+            <div class="approach-number">03</div>
+            <h3 class="approach-card-title">Transformação</h3>
+            <p class="approach-card-text">
+              Desenvolvimento conjunto de novos repertórios comportamentais mais funcionais e saudáveis, fortalecendo a autonomia e o equilíbrio a longo prazo.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. Serviços (#servicos)
+         ====================================================================== -->
+    <section id="servicos" class="section-padding bg-light" aria-labelledby="servicos-title">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">Modalidades de Atendimento</span>
+          <h2 id="servicos-title" class="section-title">Serviços</h2>
+          <p class="section-subtitle">
+            Atendimento clínico ético e consultoria organizacional focados em adultos, idosos e empresas.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- Card 1: Psicoterapia Individual -->
+          <article class="service-card reveal">
+            <div class="service-icon-wrap" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h3 class="service-title">Psicoterapia Individual</h3>
+            <p class="service-desc">
+              Espaço semanal estruturado para adultos enfrentarem questões como ansiedade, estresse, luto, autoconhecimento e dificuldades de relacionamento.
+            </p>
+            <div class="service-features">
+              <span class="service-feature-item">Sessões de 50 minutos</span>
+              <span class="service-feature-item">Foco nas contingências do dia a dia</span>
+              <span class="service-feature-item">Público adulto</span>
+            </div>
+          </article>
+
+          <!-- Card 2: Atendimento para Idosos -->
+          <article class="service-card reveal">
+            <div class="service-icon-wrap" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Atendimento para Idosos</h3>
+            <p class="service-desc">
+              Acompanhamento especializado para as demandas da terceira idade: transições de rotina, luto, perda de autonomia, aposentadoria e fortalecimento emocional.
+            </p>
+            <div class="service-features">
+              <span class="service-feature-item">Escuta atenta e ritmo adaptado</span>
+              <span class="service-feature-item">Preservação da dignidade e sentido de vida</span>
+              <span class="service-feature-item">Apoio a fases de transição</span>
+            </div>
+          </article>
+
+          <!-- Card 3: Atendimento Online -->
+          <article class="service-card reveal">
+            <div class="service-icon-wrap" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Atendimento Online</h3>
+            <p class="service-desc">
+              Sessões com a mesma eficácia e sigilo do presencial, com flexibilidade de horários para todo o Brasil e brasileiros residentes no exterior.
+            </p>
+            <div class="service-features">
+              <span class="service-feature-item">Plataforma segura com criptografia</span>
+              <span class="service-feature-item">Conforto da sua própria casa</span>
+              <span class="service-feature-item">Sem deslocamentos no trânsito</span>
+            </div>
+          </article>
+
+          <!-- Card 4: Consultoria em R&S -->
+          <article class="service-card reveal">
+            <div class="service-icon-wrap" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="8.5" cy="7" r="4"></circle>
+                <line x1="20" y1="8" x2="20" y2="14"></line>
+                <line x1="23" y1="11" x2="17" y2="11"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Consultoria em R&amp;S</h3>
+            <p class="service-desc">
+              Recrutamento e Seleção de profissionais com avaliação de perfil comportamental e alinhamento cultural, estruturado para empresas de diversos portes.
+            </p>
+            <div class="service-features">
+              <span class="service-feature-item">Mapeamento de competências</span>
+              <span class="service-feature-item">Entrevistas comportamentais por competência</span>
+              <span class="service-feature-item">Redução de turnover organizacional</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. FAQ (#faq) - Acordeão Acessível
+         ====================================================================== -->
+    <section id="faq" class="section-padding" aria-labelledby="faq-title">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">Dúvidas Frequentes</span>
+          <h2 id="faq-title" class="section-title">Perguntas Comuns</h2>
+          <p class="section-subtitle">
+            Informações claras sobre o funcionamento das consultas, modalidades e consultoria.
+          </p>
+        </div>
+
+        <div class="faq-wrap reveal">
+          <div class="faq-list">
+            
+            <!-- Pergunta 1 -->
+            <div class="faq-item">
+              <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-1" id="faq-q-1">
+                <span>Como funciona a primeira sessão?</span>
+                <span class="faq-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div id="faq-ans-1" class="faq-panel" role="region" aria-labelledby="faq-q-1">
+                <div class="faq-panel-content">
+                  A primeira sessão é um momento de conhecimento mútuo e acolhimento da sua queixa principal. Você terá espaço para relatar o que o levou a procurar apoio profissional, esclarecer suas dúvidas sobre a Análise do Comportamento e compreender o formato de trabalho. Juntos, alinhamos as expectativas e os primeiros objetivos do acompanhamento.
+                </div>
+              </div>
+            </div>
+
+            <!-- Pergunta 2 -->
+            <div class="faq-item">
+              <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-2" id="faq-q-2">
+                <span>Qual é a duração e a frequência das sessões?</span>
+                <span class="faq-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div id="faq-ans-2" class="faq-panel" role="region" aria-labelledby="faq-q-2">
+                <div class="faq-panel-content">
+                  Cada sessão tem a duração de 50 minutos. A frequência usual é semanal, o que garante a continuidade necessária para o processo analítico e as mudanças práticas. Em fases de manutenção ou situações avaliadas conjuntamente, o intervalo pode ser ajustado para quinzenal.
+                </div>
+              </div>
+            </div>
+
+            <!-- Pergunta 3 -->
+            <div class="faq-item">
+              <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-3" id="faq-q-3">
+                <span>Como funciona a consultoria em R&amp;S para empresas?</span>
+                <span class="faq-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div id="faq-ans-3" class="faq-panel" role="region" aria-labelledby="faq-q-3">
+                <div class="faq-panel-content">
+                  A consultoria em Recrutamento e Seleção é estruturada de acordo com o perfil da vaga e a cultura da organização. Conduzo o alinhamento de perfil, a divulgação estratégica, a triagem técnica, entrevistas com foco em competências e dinâmicas comportamentais, entregando à empresa um parecer psicológico completo dos candidatos mais alinhados ao cargo.
+                </div>
+              </div>
+            </div>
+
+            <!-- Pergunta 4 -->
+            <div class="faq-item">
+              <button type="button" class="faq-trigger" aria-expanded="false" aria-controls="faq-ans-4" id="faq-q-4">
+                <span>Como funciona o atendimento psicológico online?</span>
+                <span class="faq-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </button>
+              <div id="faq-ans-4" class="faq-panel" role="region" aria-labelledby="faq-q-4">
+                <div class="faq-panel-content">
+                  O atendimento online ocorre por meio de videochamadas em ambiente seguro e criptografado, regulamentado pelo Conselho Federal de Psicologia. Você só precisa de uma conexão estável à internet, fones de ouvido e um local privativo onde se sinta à vontade para conversar sem interrupções. Atende pessoas de qualquer região do Brasil ou no exterior.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. Contato e Agendamento (#contato)
+         ====================================================================== -->
+    <section id="contato" class="section-padding bg-light" aria-labelledby="contato-title">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">Agendamento e Dúvidas</span>
+          <h2 id="contato-title" class="section-title">Contato e Agendamento</h2>
+          <p class="section-subtitle">
+            Dê o primeiro passo em direção ao seu cuidado emocional. Envie uma mensagem ou fale diretamente pelo WhatsApp.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Card de Informações e Localização -->
+          <div class="contact-card reveal">
+            <h3 class="contact-card-title">Informações do Consultório</h3>
+
+            <div class="contact-info-list">
+              
+              <div class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="contact-info-details">
+                  <span class="contact-info-label">Endereço Presencial</span>
+                  <span class="contact-info-value">Rua Espírito Santo, 103 — São Judas Tadeu, Dois Vizinhos — PR</span>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-info-details">
+                  <span class="contact-info-label">Horários de Atendimento</span>
+                  <span class="contact-info-value">Segunda a sexta, a partir das 18h (mediante agendamento)</span>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-info-details">
+                  <span class="contact-info-label">E-mail</span>
+                  <span class="contact-info-value">
+                    <a href="mailto:naidionaramaschio.psi@gmail.com">naidionaramaschio.psi@gmail.com</a>
+                  </span>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="contact-info-details">
+                  <span class="contact-info-label">Telefone / WhatsApp</span>
+                  <span class="contact-info-value">
+                    <a href="https://wa.me/5554997011417?text=Ol%C3%A1%2C%20Naidionara!%20Vim%20pelo%20site%20Cl%C3%ADnica%20Comportar%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20atendimentos." target="_blank" rel="noopener noreferrer">+55 (54) 99701-1417</a>
+                  </span>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </div>
+                <div class="contact-info-details">
+                  <span class="contact-info-label">Instagram</span>
+                  <span class="contact-info-value">
+                    <a href="https://www.instagram.com/psinaidionaramaschio" target="_blank" rel="noopener noreferrer">@psinaidionaramaschio</a>
+                  </span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Card Visual de Localização / Dois Vizinhos -->
+            <div class="map-placeholder-box">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--deep-soft);">
+                <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                <line x1="8" y1="2" x2="8" y2="18"></line>
+                <line x1="16" y1="6" x2="16" y2="22"></line>
+              </svg>
+              <div>
+                <span class="map-placeholder-text">Consultório em Dois Vizinhos / PR</span>
+                <p style="font-size: 0.82rem; color: var(--muted); margin-top: 4px;">Atendimento presencial com fácil acesso e estacionamento nas proximidades.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Formulário com Validação -->
+          <div class="form-card reveal">
+            <h3 class="form-card-title">Envie uma Mensagem</h3>
+            <p class="form-card-subtitle">Preencha os campos abaixo e responderei com a brevidade possível.</p>
+
+            <div id="form-sucesso" class="form-status-alert" role="status" aria-live="polite"></div>
+
+            <form id="contato-form" novalidate>
+              
+              <div class="form-group">
+                <label for="form-nome" class="form-label">
+                  Nome Completo <span class="required-mark" aria-hidden="true">*</span>
+                </label>
+                <input type="text" id="form-nome" name="nome" class="form-input" placeholder="Ex.: Maria da Silva" autocomplete="name" required aria-describedby="erro-nome" />
+                <span id="erro-nome" class="form-error-msg">Por favor, informe seu nome com pelo menos 3 caracteres.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">
+                  E-mail <span class="required-mark" aria-hidden="true">*</span>
+                </label>
+                <input type="email" id="form-email" name="email" class="form-input" placeholder="seuemail@exemplo.com" autocomplete="email" required aria-describedby="erro-email" />
+                <span id="erro-email" class="form-error-msg">Por favor, insira um e-mail válido.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-telefone" class="form-label">
+                  Telefone / WhatsApp <span class="required-mark" aria-hidden="true">*</span>
+                </label>
+                <input type="tel" id="form-telefone" name="telefone" class="form-input" placeholder="(00) 00000-0000" autocomplete="tel" required aria-describedby="erro-telefone" />
+                <span id="erro-telefone" class="form-error-msg">Informe um telefone válido com DDD (10 ou 11 dígitos).</span>
+              </div>
+
+              <div class="form-group">
+                <label for="form-mensagem" class="form-label">
+                  Mensagem <span class="required-mark" aria-hidden="true">*</span>
+                </label>
+                <textarea id="form-mensagem" name="mensagem" class="form-textarea" placeholder="Conte brevemente o motivo do contato ou qual modalidade você busca..." required aria-describedby="erro-mensagem"></textarea>
+                <span id="erro-mensagem" class="form-error-msg">Por favor, escreva uma mensagem com ao menos 10 caracteres.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Enviar Mensagem
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         8. Faixa CTA ("O primeiro passo pode ser hoje")
+         ====================================================================== -->
+    <section class="cta-banner-section" aria-label="Chamada para Ação">
+      <div class="container cta-banner-content reveal">
+        <h2 class="cta-banner-title">O primeiro passo pode ser hoje</h2>
+        <p class="cta-banner-text">
+          Priorize sua saúde mental. Agende um horário conveniente e comece seu processo de autoconhecimento e transformação.
+        </p>
+        <a href="https://wa.me/5554997011417?text=Ol%C3%A1%2C%20Naidionara!%20Vim%20pelo%20site%20Cl%C3%ADnica%20Comportar%20e%20gostaria%20de%20agendar%20minha%20primeira%20consulta." target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="background-color: var(--white); color: var(--deep); box-shadow: 0 4px 14px rgba(0,0,0,0.2);">
+          Agendar Consulta via WhatsApp
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       9. Rodapé
+       ====================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div>
+          <div class="footer-brand-title">Clínica Comportar</div>
+          <div class="footer-brand-crp">Naidionara Maschio · CRP 08/42488</div>
+          <p class="footer-bio">
+            Psicoterapia com base na Análise do Comportamento para adultos e idosos. Atendimento humanizado presencial em Dois Vizinhos/PR e online para todo o Brasil e exterior.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Navegação</div>
+          <ul class="footer-links-list">
+            <li><a href="#inicio" class="footer-link">Início</a></li>
+            <li><a href="#sobre" class="footer-link">Sobre Mim</a></li>
+            <li><a href="#abordagem" class="footer-link">Abordagem</a></li>
+            <li><a href="#servicos" class="footer-link">Serviços</a></li>
+            <li><a href="#faq" class="footer-link">FAQ</a></li>
+            <li><a href="#contato" class="footer-link">Contato</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Atendimento</div>
+          <ul class="footer-contact-list">
+            <li>Rua Espírito Santo, 103 — Dois Vizinhos/PR</li>
+            <li>Segunda a sexta, a partir das 18h</li>
+            <li>
+              WhatsApp: <a href="https://wa.me/5554997011417?text=Ol%C3%A1%2C%20Naidionara!%20Vim%20pelo%20site%20Cl%C3%ADnica%20Comportar." target="_blank" rel="noopener noreferrer">+55 (54) 99701-1417</a>
+            </li>
+            <li>
+              E-mail: <a href="mailto:naidionaramaschio.psi@gmail.com">naidionaramaschio.psi@gmail.com</a>
+            </li>
+            <li>
+              Instagram: <a href="https://www.instagram.com/psinaidionaramaschio" target="_blank" rel="noopener noreferrer">@psinaidionaramaschio</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="ano-atual">2026</span> Clínica Comportar — Todos os direitos reservados.
+        </div>
+        <div>
+          Naidionara Maschio — Psicóloga Clínica e Organizacional (CRP 08/42488)
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       10. Botão Flutuante do WhatsApp
+       ====================================================================== -->
+  <a href="https://wa.me/5554997011417?text=Ol%C3%A1%2C%20Naidionara!%20Vim%20pelo%20site%20Cl%C3%ADnica%20Comportar." target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Falar com Naidionara no WhatsApp">
+    <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+  </a>
+
+  <!-- Script Vanilla Puro -->
+  <script src="script.js"></script>
+</body>
+</html>
