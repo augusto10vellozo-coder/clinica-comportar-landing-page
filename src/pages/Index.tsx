@@ -100,13 +100,13 @@ export default function Index() {
             <img
               src="/images/logo.jpg"
               alt="Logo Clínica Comportar"
-              className="w-11 h-11 rounded-[10px] object-cover shadow-sm bg-blue-50 border border-blue-100"
+              className="w-10 h-10 rounded-lg object-cover shadow-sm bg-blue-50 border border-slate-200"
             />
             <div className="flex flex-col">
               <span className="text-lg font-bold text-[#1e3a5f] leading-tight">
                 Clínica Comportar
               </span>
-              <span className="text-xs font-semibold text-[#3b6a9a] tracking-wide">
+              <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-[0.18em]">
                 Psicologia Clínica
               </span>
             </div>
@@ -212,7 +212,7 @@ export default function Index() {
       {/* Hero Section */}
       <section
         id="inicio"
-        className="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-b from-[#eff6ff] to-slate-50"
+        className="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-b from-[#eff6ff] to-white"
       >
         <div className="max-w-[1140px] mx-auto px-5">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -225,14 +225,14 @@ export default function Index() {
                 </span>
               </div>
 
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#1e3a5f] leading-tight tracking-tight">
-                Cuidado psicológico baseado em ciência e{' '}
-                <em className="italic text-[#3b6a9a]">acolhimento humano</em>.
+              <h1 className="text-4xl sm:text-5xl lg:text-[3.4rem] font-extrabold text-[#1e3a5f] leading-[1.15] tracking-tight">
+                Cuidar da sua saúde mental é um{' '}
+                <span className="text-[#0d9488]">ato de coragem.</span>
               </h1>
 
               <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl">
-                Espaço seguro e estruturado para compreender padrões comportamentais, superar
-                angústias e construir uma vida com mais autonomia, equilíbrio e significado.
+                Psicoterapia individual para adultos e idosos com base na Análise do Comportamento.
+                Atendimento presencial e online com foco no acolhimento e desenvolvimento pessoal.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-2">
@@ -240,106 +240,60 @@ export default function Index() {
                   href="https://wa.me/5554997011417?text=Ol%C3%A1%2C%20Naidionara!%20Vim%20pelo%20site%20Cl%C3%ADnica%20Comportar%20e%20gostaria%20de%20agendar%20minha%20primeira%20consulta."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-[#25d366] hover:bg-[#1eb956] text-white font-semibold shadow-md hover:shadow-lg transition-all"
+                  className="inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-[#0d9488] hover:bg-[#0f766e] text-white font-semibold shadow-lg shadow-teal-600/25 hover:shadow-xl transition-all"
                 >
-                  <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
-                  </svg>
-                  <span>Agendar via WhatsApp</span>
+                  Agendar Primeira Consulta
                 </a>
                 <a
                   href="#servicos"
-                  className="inline-flex items-center justify-center px-6 py-3.5 rounded-full bg-white hover:bg-blue-50 text-[#1e3a5f] font-semibold border border-slate-200 shadow-xs hover:shadow-md transition-all"
+                  className="inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-white hover:bg-blue-50/60 text-[#1e3a5f] font-semibold border border-slate-200 shadow-xs hover:shadow-md transition-all"
                 >
                   Conhecer os Serviços
                 </a>
               </div>
 
               {/* 3 Facts */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-blue-200/80">
-                <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-lg bg-blue-100 flex items-center justify-center text-[#1e3a5f]">
-                    <svg
-                      className="w-5 h-5"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
-                    >
-                      <circle cx="12" cy="12" r="10" />
-                      <polyline points="12 6 12 12 16 14" />
-                    </svg>
-                  </div>
-                  <span className="text-sm font-semibold text-[#1e3a5f]">Seg–Sex após as 18h</span>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 mt-6 border-t border-blue-200/70">
+                <div>
+                  <div className="text-lg font-bold text-[#1e3a5f]">Seg–Sex</div>
+                  <div className="text-sm text-slate-500 mt-1">após as 18h</div>
                 </div>
-
-                <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-lg bg-blue-100 flex items-center justify-center text-[#1e3a5f]">
-                    <svg
-                      className="w-5 h-5"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                    </svg>
-                  </div>
-                  <span className="text-sm font-semibold text-[#1e3a5f]">50min por sessão</span>
+                <div>
+                  <div className="text-lg font-bold text-[#1e3a5f]">50min</div>
+                  <div className="text-sm text-slate-500 mt-1">por sessão</div>
                 </div>
-
-                <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-lg bg-blue-100 flex items-center justify-center text-[#1e3a5f]">
-                    <svg
-                      className="w-5 h-5"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
-                    >
-                      <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-                      <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-                    </svg>
-                  </div>
-                  <span className="text-sm font-semibold text-[#1e3a5f]">100% sigiloso</span>
+                <div>
+                  <div className="text-lg font-bold text-[#1e3a5f]">100%</div>
+                  <div className="text-sm text-slate-500 mt-1">sigiloso</div>
                 </div>
               </div>
             </div>
 
             {/* Card Lateral Hero */}
             <div className="lg:col-span-5">
-              <div className="bg-white rounded-3xl p-8 border border-blue-100 shadow-xl relative">
-                <div className="flex items-center gap-4 pb-5 border-b border-slate-100">
-                  <img
-                    src="/images/psicologa.jpg"
-                    alt="Naidionara Maschio"
-                    className="w-16 h-16 rounded-full object-cover border-2 border-blue-100 shadow-sm"
-                  />
-                  <div>
-                    <h3 className="font-bold text-[#1e3a5f] text-base">Naidionara Maschio</h3>
-                    <p className="text-xs font-medium text-slate-500">
-                      Psicóloga Clínica e Organizacional · CRP 08/42488
-                    </p>
-                  </div>
-                </div>
-
-                <blockquote className="my-6 pl-4 border-l-4 border-[#0d9488] text-slate-600 italic text-sm leading-relaxed">
-                  "Compreender a função do comportamento é a chave para transformar sofrimento em
-                  autonomia e clareza de caminhos."
+              <div className="bg-white rounded-2xl p-8 sm:p-9 border border-blue-100 shadow-xl shadow-blue-900/5">
+                <blockquote className="text-lg font-semibold text-[#1e3a5f] leading-relaxed">
+                  "Um espaço seguro para o seu autoconhecimento e bem-estar emocional."
                 </blockquote>
 
-                <div className="space-y-3">
+                <div className="mt-6 space-y-4">
                   {[
-                    'Atendimento individualizado para adultos e idosos',
-                    'Sessões estruturadas pela Análise do Comportamento',
-                    'Modalidade presencial em Dois Vizinhos/PR e online',
-                    'Consultoria corporativa e seleção profissional',
+                    'Escuta ativa, sem julgamentos, no seu ritmo.',
+                    'Sessões online com a mesma qualidade do presencial.',
+                    'Atendimento baseado na Análise do Comportamento.',
+                    'Atendimentos de segunda a sexta, após as 18h.',
                   ].map((item, idx) => (
-                    <div key={idx} className="flex items-center gap-3 text-sm text-slate-700">
-                      <div className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xs font-bold shrink-0">
-                        ✓
-                      </div>
-                      <span>{item}</span>
+                    <div key={idx} className="flex items-start gap-3 text-sm text-slate-600">
+                      <svg
+                        className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        viewBox="0 0 24 24"
+                      >
+                        <polyline points="20 6 9 17 4 12" />
+                      </svg>
+                      <span className="leading-relaxed">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -350,71 +304,51 @@ export default function Index() {
       </section>
 
       {/* Sobre Mim */}
-      <section id="sobre" className="py-20 bg-slate-50 border-t border-slate-100">
+      <section id="sobre" className="py-20 bg-white">
         <div className="max-w-[1140px] mx-auto px-5">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-[#3b6a9a] bg-blue-50 border border-blue-200 rounded-full inline-block mb-3">
-              Trajetória e Prática
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4">Sobre Mim</h2>
-            <p className="text-slate-600">
-              Compromisso ético, fundamentação científica sólida e uma escuta sensível para
-              acompanhar você em cada etapa do seu desenvolvimento.
-            </p>
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
             <div className="md:col-span-5 relative">
-              <div className="rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-blue-50">
+              <div className="rounded-[24px] overflow-hidden shadow-lg bg-blue-50">
                 <img
                   src="/images/psicologa.jpg"
                   alt="Naidionara Maschio"
-                  className="w-full h-auto object-cover hover:scale-102 transition-transform duration-500"
+                  className="w-full h-auto object-cover"
                 />
-              </div>
-              <div className="absolute -bottom-4 right-4 bg-white p-4 rounded-2xl shadow-lg border-l-4 border-[#3b6a9a]">
-                <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">
-                  Registro Profissional
-                </div>
-                <div className="text-base font-bold text-[#1e3a5f]">CRP 08/42488</div>
               </div>
             </div>
 
-            <div className="md:col-span-7 flex flex-col gap-5">
-              <div>
-                <h3 className="text-2xl font-bold text-[#1e3a5f]">Naidionara Maschio</h3>
-                <p className="text-sm font-semibold text-[#3b6a9a]">
-                  Psicóloga clínica e organizacional
-                </p>
+            <div className="md:col-span-7 flex flex-col">
+              <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#0d9488] mb-3">
+                Sobre Mim
               </div>
-
-              <p className="text-slate-600 leading-relaxed text-[15px]">
-                Na prática clínica, ofereço um espaço acolhedor e seguro voltado para o atendimento
-                de adultos e idosos. Minha missão é proporcionar uma escuta sem julgamentos, onde
-                cada indivíduo possa expressar suas dores, reconhecer suas potencialidades e
-                construir estratégias sólidas para enfrentar desafios cotidianos e emocionais.
+              <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-2">
+                Naidionara Maschio
+              </h2>
+              <p className="text-sm font-semibold text-[#0d9488] mb-6">
+                CRP 08/42488 — Psicóloga Clínica e Organizacional
               </p>
 
               <p className="text-slate-600 leading-relaxed text-[15px]">
-                Minha atuação é integralmente embasada na Análise do Comportamento, uma abordagem
-                que estuda as relações entre as ações do ser humano e o ambiente ao seu redor.
-                Através da análise funcional, investigamos não apenas os sintomas, mas as
-                contingências que mantêm determinados padrões, promovendo mudanças sustentáveis e
-                conscientes.
+                Sou psicóloga clínica e organizacional e acredito que o cuidado com a saúde mental
+                começa quando existe um espaço realmente livre de julgamentos. Acompanho adultos e
+                idosos em processos de ansiedade, autoconhecimento, luto, reconstrução de projetos
+                de vida e adaptação às mudanças da vida adulta e da terceira idade.
               </p>
 
-              <p className="text-slate-600 leading-relaxed text-[15px]">
-                Além do consultório clínico, atuo na psicologia organizacional oferecendo
-                consultoria especializada em recrutamento e seleção (R&S). Conectar o perfil
-                psicológico e comportamental dos candidatos aos valores e necessidades de cada
-                organização potencializa equipes mais integradas, produtivas e saudáveis.
+              <p className="text-slate-600 leading-relaxed text-[15px] mt-4">
+                Minha prática clínica é fundamentada na Análise do Comportamento, observando como o
+                ambiente, as relações e as consequências moldam os comportamentos. Trabalho com
+                escuta ativa, respeito ao tempo de cada pessoa e compromisso ético com o sigilo.
               </p>
 
-              <div className="pt-2">
-                <div className="text-xs font-bold uppercase tracking-wider text-[#1e3a5f] mb-3">
-                  Principais Áreas de Atuação
-                </div>
-                <div className="flex flex-wrap gap-2">
+              <p className="text-slate-600 leading-relaxed text-[15px] mt-4">
+                Também atuo como psicóloga organizacional oferecendo consultoria em processos de
+                recrutamento e seleção, preparando recrutadores e candidatos para processos mais
+                assertivos, humanizados e alinhados às competências de cada vaga.
+              </p>
+
+              <div className="mt-7">
+                <div className="flex flex-wrap gap-3">
                   {[
                     'Ansiedade',
                     'Autoconhecimento',
@@ -425,7 +359,7 @@ export default function Index() {
                   ].map((tag) => (
                     <span
                       key={tag}
-                      className="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-blue-50 text-[#1e3a5f] border border-blue-200"
+                      className="px-4 py-1.5 rounded-full text-sm text-[#1e3a5f] bg-white border border-slate-200"
                     >
                       {tag}
                     </span>
@@ -438,61 +372,58 @@ export default function Index() {
       </section>
 
       {/* Abordagem Terapêutica */}
-      <section id="abordagem" className="py-20 bg-white">
+      <section id="abordagem" className="py-20 bg-slate-50/60 border-y border-slate-100">
         <div className="max-w-[1140px] mx-auto px-5">
           <div className="text-center max-w-2xl mx-auto mb-14">
-            <span className="px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-[#3b6a9a] bg-blue-50 border border-blue-200 rounded-full inline-block mb-3">
-              Fundamentação Científica
-            </span>
+            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#0d9488] mb-3">
+              Abordagem Terapêutica
+            </div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4">
               Análise do Comportamento
             </h2>
-            <p className="text-slate-600">
-              Uma abordagem baseada em evidências que investiga as contingências e a funcionalidade
-              das ações humanas.
+            <p className="text-slate-500">
+              Uma abordagem baseada em evidências: compreender como o ambiente influencia o
+              comportamento e construir, juntos, novas possibilidades de vida.
             </p>
           </div>
 
-          <div className="bg-slate-50 border border-blue-100 rounded-2xl p-6 sm:p-8 mb-12 text-slate-700 leading-relaxed text-base shadow-xs">
+          <div className="bg-white border border-slate-200 border-l-4 border-l-[#0d9488] rounded-2xl p-7 sm:p-9 mb-12 text-slate-700 leading-relaxed shadow-xs">
             <p>
-              A <strong className="text-[#1e3a5f] font-semibold">Análise do Comportamento</strong>{' '}
-              compreende o ser humano como um organismo ativo que interage continuamente com seu
-              meio social, histórico e cultural. Alicerçada nos princípios científicos do
-              behaviorismo radical desenvolvidos por B. F. Skinner, a abordagem não busca rotular
-              pessoas, mas sim compreender por que agimos da maneira como agimos: quais contextos
-              antecedem nossos comportamentos e quais consequências os mantêm. Com esse
-              entendimento, paciente e psicóloga colaboram para construir novos repertórios de
-              resposta que gerem bem-estar, autonomia e alívio do sofrimento psicológico.
+              A Análise do Comportamento, desenvolvida por B. F. Skinner, estuda como nossas ações
+              são moldadas pelo ambiente, pelas relações e pelas consequências que as seguem. Na
+              clínica, isso significa olhar com cuidado para o contexto do sofrimento, identificar
+              padrões que se mantêm e promover novos comportamentos mais saudáveis e alinhados ao
+              que cada pessoa valoriza — sempre com acolhimento, nunca com cobrança.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
-                num: '01',
+                num: '1',
                 title: 'Acolhimento',
-                desc: 'Construção de uma relação terapêutica empática, segura e livre de julgamentos, onde sua história de vida e seus sentimentos são respeitados com total sigilo.',
+                desc: 'Um espaço seguro e sigiloso, onde você pode falar sem medo de julgamento. Nas primeiras sessões, entendemos sua história e definimos objetivos claros.',
               },
               {
-                num: '02',
+                num: '2',
                 title: 'Análise funcional',
-                desc: 'Identificação clara das relações entre sentimentos, pensamentos, ações e o contexto em que ocorrem, revelando a função real de cada padrão que gera incômodo ou dor.',
+                desc: 'Compreensão do contexto em que os comportamentos acontecem: quais antecedentes e consequências mantêm o sofrimento e o que pode ser modificado.',
               },
               {
-                num: '03',
+                num: '3',
                 title: 'Transformação',
-                desc: 'Desenvolvimento conjunto de novos repertórios comportamentais mais funcionais e saudáveis, fortalecendo a autonomia e o equilíbrio a longo prazo.',
+                desc: 'Desenvolvimento de habilidades práticas para o dia a dia, fortalecendo comportamentos de autocuidado, comunicação e enfrentamento.',
               },
             ].map((step) => (
               <div
                 key={step.num}
-                className="bg-white rounded-2xl p-7 border border-slate-200 hover:border-blue-200 hover:shadow-md transition-all flex flex-col"
+                className="bg-white rounded-2xl p-7 border border-slate-200 hover:border-teal-200 hover:shadow-md transition-all flex flex-col"
               >
-                <div className="w-11 h-11 rounded-lg bg-blue-50 text-[#3b6a9a] text-lg font-bold flex items-center justify-center mb-5">
+                <div className="w-9 h-9 rounded-lg bg-slate-100 text-[#1e3a5f] text-base font-bold flex items-center justify-center mb-6">
                   {step.num}
                 </div>
-                <h3 className="text-xl font-bold text-[#1e3a5f] mb-3">{step.title}</h3>
-                <p className="text-sm text-slate-600 leading-relaxed">{step.desc}</p>
+                <h3 className="text-lg font-bold text-[#1e3a5f] mb-3">{step.title}</h3>
+                <p className="text-[15px] text-slate-600 leading-relaxed">{step.desc}</p>
               </div>
             ))}
           </div>
