@@ -435,128 +435,55 @@ export default function Index() {
       </section>
 
       {/* Serviços */}
-      <section id="servicos" className="py-20 bg-slate-50 border-t border-slate-100">
+      <section id="servicos" className="py-20 bg-white">
         <div className="max-w-[1140px] mx-auto px-5">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-[#3b6a9a] bg-blue-50 border border-blue-200 rounded-full inline-block mb-3">
-              Modalidades de Atendimento
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4">Serviços</h2>
-            <p className="text-slate-600">
-              Atendimento clínico ético e consultoria organizacional focados em adultos, idosos e
-              empresas.
+          <div className="text-center max-w-2xl mx-auto mb-14">
+            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#0d9488] mb-3">
+              SERVIÇOS
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4">
+              Como posso ajudar
+            </h2>
+            <p className="text-slate-500 text-sm sm:text-base leading-relaxed">
+              Atendimentos clínicos e consultoria organizacional, presencial e online, para o seu
+              momento.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
             {[
               {
+                emoji: '🧠',
                 title: 'Psicoterapia Individual',
-                desc: 'Espaço semanal estruturado para adultos enfrentarem questões como ansiedade, estresse, luto, autoconhecimento e dificuldades de relacionamento.',
-                features: [
-                  'Sessões de 50 minutos',
-                  'Foco nas contingências do dia a dia',
-                  'Público adulto',
-                ],
-                icon: (
-                  <svg
-                    className="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                    <circle cx="12" cy="7" r="4" />
-                  </svg>
-                ),
+                desc: 'Para adultos, com foco em ansiedade, autoconhecimento, luto, estresse e gestão de conflitos pessoais e profissionais.',
               },
               {
+                emoji: '🧡',
                 title: 'Atendimento para Idosos',
-                desc: 'Acompanhamento especializado para as demandas da terceira idade: transições de rotina, luto, perda de autonomia, aposentadoria e fortalecimento emocional.',
-                features: [
-                  'Escuta atenta e ritmo adaptado',
-                  'Preservação da dignidade e sentido de vida',
-                  'Apoio a fases de transição',
-                ],
-                icon: (
-                  <svg
-                    className="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                  </svg>
-                ),
+                desc: 'Acolhimento especializado para as demandas da terceira idade: perdas, mudanças de papel, solidão, memória e qualidade de vida.',
               },
               {
+                emoji: '💻',
                 title: 'Atendimento Online',
-                desc: 'Sessões com a mesma eficácia e sigilo do presencial, com flexibilidade de horários para todo o Brasil e brasileiros residentes no exterior.',
-                features: [
-                  'Plataforma segura com criptografia',
-                  'Conforto da sua própria casa',
-                  'Sem deslocamentos no trânsito',
-                ],
-                icon: (
-                  <svg
-                    className="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
-                    <line x1="8" y1="21" x2="16" y2="21" />
-                    <line x1="12" y1="17" x2="12" y2="21" />
-                  </svg>
-                ),
+                desc: 'Para pacientes de todo o Brasil e do exterior, por videochamada criptografada, com total segurança e sigilo.',
               },
               {
+                emoji: '🎯',
                 title: 'Consultoria em R&S',
-                desc: 'Recrutamento e Seleção de profissionais com avaliação de perfil comportamental e alinhamento cultural, estruturado para empresas de diversos portes.',
-                features: [
-                  'Mapeamento de competências',
-                  'Entrevistas comportamentais por competência',
-                  'Redução de turnover organizacional',
-                ],
-                icon: (
-                  <svg
-                    className="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                    <circle cx="8.5" cy="7" r="4" />
-                    <line x1="20" y1="8" x2="20" y2="14" />
-                    <line x1="23" y1="11" x2="17" y2="11" />
-                  </svg>
-                ),
+                desc: 'Para recrutadores e candidatos: processos de recrutamento e seleção mais assertivos, humanizados e alinhados às competências de cada vaga.',
               },
             ].map((srv, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-2xl p-8 border border-slate-200 hover:border-blue-200 hover:shadow-lg transition-all flex flex-col"
+                className="bg-white rounded-2xl p-7 border border-blue-100/90 shadow-sm hover:shadow-md hover:border-teal-200 transition-all flex flex-col"
               >
-                <div className="w-12 h-12 rounded-xl bg-blue-50 text-[#0d9488] flex items-center justify-center mb-6">
-                  {srv.icon}
+                <div className="text-3xl mb-5 select-none" aria-hidden="true">
+                  {srv.emoji}
                 </div>
-                <h3 className="text-xl font-bold text-[#1e3a5f] mb-3">{srv.title}</h3>
-                <p className="text-sm text-slate-600 leading-relaxed mb-6 flex-grow">{srv.desc}</p>
-                <div className="pt-4 border-t border-slate-100 space-y-2">
-                  {srv.features.map((feat, fidx) => (
-                    <div
-                      key={fidx}
-                      className="flex items-center gap-2 text-xs font-semibold text-[#1e3a5f]"
-                    >
-                      <span className="text-[#0d9488] text-base leading-none">•</span>
-                      <span>{feat}</span>
-                    </div>
-                  ))}
-                </div>
+                <h3 className="text-base font-bold text-[#1e3a5f] mb-3 leading-snug">
+                  {srv.title}
+                </h3>
+                <p className="text-sm text-slate-500 leading-relaxed flex-grow">{srv.desc}</p>
               </div>
             ))}
           </div>
@@ -564,70 +491,71 @@ export default function Index() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="py-20 bg-white">
-        <div className="max-w-[820px] mx-auto px-5">
-          <div className="text-center mb-14">
-            <span className="px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-[#3b6a9a] bg-blue-50 border border-blue-200 rounded-full inline-block mb-3">
-              Dúvidas Frequentes
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4">Perguntas Comuns</h2>
-            <p className="text-slate-600">
-              Informações claras sobre o funcionamento das consultas, modalidades e consultoria.
+      <section id="faq" className="py-20 bg-[#eff6ff]">
+        <div className="max-w-[760px] mx-auto px-5">
+          <div className="text-center mb-12">
+            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#0d9488] mb-3">
+              DÚVIDAS FREQUENTES
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-3">
+              Perguntas frequentes
+            </h2>
+            <p className="text-slate-500 text-sm sm:text-base">
+              Se a sua dúvida não estiver aqui, é só me chamar no WhatsApp.
             </p>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-3.5">
             {[
               {
                 q: 'Como funciona a primeira sessão?',
-                a: 'A primeira sessão é um momento de conhecimento mútuo e acolhimento da sua queixa principal. Você terá espaço para relatar o que o levou a procurar apoio profissional, esclarecer suas dúvidas sobre a Análise do Comportamento e compreender o formato de trabalho. Juntos, alinhamos as expectativas e os primeiros objetivos do acompanhamento.',
+                a: 'A primeira sessão é um momento de acolhimento e escuta da sua queixa principal. Você pode relatar o que o trouxe ao atendimento, esclarecer dúvidas sobre a Análise do Comportamento e compreender o funcionamento dos encontros. Juntos, traçamos os primeiros objetivos do acompanhamento.',
               },
               {
-                q: 'Qual é a duração e a frequência das sessões?',
-                a: 'Cada sessão tem a duração de 50 minutos. A frequência usual é semanal, o que garante a continuidade necessária para o processo analítico e as mudanças práticas. Em fases de manutenção ou situações avaliadas conjuntamente, o intervalo pode ser ajustado para quinzenal.',
+                q: 'Qual é a duração e a frequência das consultas?',
+                a: 'As consultas têm duração de 50 minutos, com frequência habitual semanal — essencial para o vínculo terapêutico e a consistência das intervenções. Em momentos específicos de alta ou acompanhamento pós-processo, a periodicidade pode ser reajustada.',
               },
               {
-                q: 'Como funciona a consultoria em R&S para empresas?',
-                a: 'A consultoria em Recrutamento e Seleção é estruturada de acordo com o perfil da vaga e a cultura da organização. Conduzo o alinhamento de perfil, a divulgação estratégica, a triagem técnica, entrevistas com foco em competências e dinâmicas comportamentais, entregando à empresa um parecer psicológico completo dos candidatos mais alinhados ao cargo.',
+                q: 'Como funciona a consultoria em recrutamento e seleção?',
+                a: 'A consultoria em R&S apoia empresas e recrutadores na condução de processos seletivos mais humanizados, técnicos e alinhados às competências de cada vaga, incluindo alinhamento de perfil, entrevistas por competências e elaboração de pareceres psicológicos.',
               },
               {
-                q: 'Como funciona o atendimento psicológico online?',
-                a: 'O atendimento online ocorre por meio de videochamadas em ambiente seguro e criptografado, regulamentado pelo Conselho Federal de Psicologia. Você só precisa de uma conexão estável à internet, fones de ouvido e um local privativo onde se sinta à vontade para conversar sem interrupções. Atende pessoas de qualquer região do Brasil ou no exterior.',
+                q: 'Como funciona o atendimento online?',
+                a: 'O atendimento online acontece por videochamada em plataforma com criptografia de ponta a ponta, com total sigilo e privacidade garantidos pelo Código de Ética do CFP. Você só precisa de conexão estável e um local reservado.',
               },
             ].map((item, idx) => (
               <div
                 key={idx}
-                className={`rounded-2xl border transition-all overflow-hidden ${
-                  activeFaq === idx
-                    ? 'border-blue-200 shadow-md bg-white'
-                    : 'border-slate-200 bg-white'
-                }`}
+                className="bg-white rounded-2xl border border-blue-100/80 shadow-xs overflow-hidden transition-all"
               >
                 <button
                   type="button"
                   onClick={() => toggleFaq(idx)}
-                  className="w-full text-left p-6 flex items-center justify-between gap-4 font-bold text-[#1e3a5f] hover:text-[#0d9488] transition-colors"
+                  className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 font-semibold text-[#1e3a5f] hover:text-[#0d9488] transition-colors"
                   aria-expanded={activeFaq === idx}
                 >
-                  <span className="text-base sm:text-lg">{item.q}</span>
+                  <span className="text-[15px] sm:text-base font-medium text-[#1e3a5f]">
+                    {item.q}
+                  </span>
                   <div
-                    className={`w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center shrink-0 transition-transform duration-300 ${
-                      activeFaq === idx ? 'rotate-180 bg-blue-100 text-[#1e3a5f]' : 'text-slate-500'
+                    className={`w-7 h-7 rounded-full bg-[#e0f2fe] flex items-center justify-center shrink-0 text-[#0284c7] transition-transform duration-200 ${
+                      activeFaq === idx ? 'rotate-45' : ''
                     }`}
                   >
                     <svg
-                      className="w-4 h-4"
+                      className="w-3.5 h-3.5"
                       fill="none"
                       stroke="currentColor"
                       strokeWidth="2.5"
                       viewBox="0 0 24 24"
                     >
-                      <polyline points="6 9 12 15 18 9" />
+                      <line x1="12" y1="5" x2="12" y2="19" />
+                      <line x1="5" y1="12" x2="19" y2="12" />
                     </svg>
                   </div>
                 </button>
                 {activeFaq === idx && (
-                  <div className="px-6 pb-6 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+                  <div className="px-6 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100/70 pt-3.5">
                     {item.a}
                   </div>
                 )}
@@ -638,207 +566,35 @@ export default function Index() {
       </section>
 
       {/* Contato e Agendamento */}
-      <section id="contato" className="py-20 bg-slate-50 border-t border-slate-100">
+      <section id="contato" className="py-20 bg-white">
         <div className="max-w-[1140px] mx-auto px-5">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-[#3b6a9a] bg-blue-50 border border-blue-200 rounded-full inline-block mb-3">
-              Agendamento e Dúvidas
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4">
-              Contato e Agendamento
-            </h2>
-            <p className="text-slate-600">
-              Dê o primeiro passo em direção ao seu cuidado emocional. Envie uma mensagem ou fale
-              diretamente pelo WhatsApp.
+          <div className="text-center max-w-2xl mx-auto mb-14">
+            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#0d9488] mb-3">
+              CONTATO E AGENDAMENTO
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-3">Vamos conversar?</h2>
+            <p className="text-slate-500 text-sm sm:text-base leading-relaxed">
+              Preencha o formulário ou fale comigo diretamente pelo WhatsApp. Respondo em até 24
+              horas úteis.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-            {/* Informações do Consultório */}
-            <div className="lg:col-span-5 bg-white rounded-3xl p-8 border border-blue-100 shadow-md flex flex-col justify-between gap-8">
-              <div>
-                <h3 className="text-xl font-bold text-[#1e3a5f] mb-6">
-                  Informações do Consultório
-                </h3>
-
-                <div className="space-y-5">
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-blue-50 text-[#3b6a9a] flex items-center justify-center shrink-0">
-                      <svg
-                        className="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                        <circle cx="12" cy="10" r="3" />
-                      </svg>
-                    </div>
-                    <div>
-                      <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">
-                        Endereço Presencial
-                      </div>
-                      <div className="text-sm font-semibold text-[#1e3a5f] leading-snug mt-0.5">
-                        Rua Espírito Santo, 103 — São Judas Tadeu, Dois Vizinhos — PR
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-blue-50 text-[#3b6a9a] flex items-center justify-center shrink-0">
-                      <svg
-                        className="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        viewBox="0 0 24 24"
-                      >
-                        <circle cx="12" cy="12" r="10" />
-                        <polyline points="12 6 12 12 16 14" />
-                      </svg>
-                    </div>
-                    <div>
-                      <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">
-                        Horários de Atendimento
-                      </div>
-                      <div className="text-sm font-semibold text-[#1e3a5f] leading-snug mt-0.5">
-                        Segunda a sexta, a partir das 18h
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-blue-50 text-[#3b6a9a] flex items-center justify-center shrink-0">
-                      <svg
-                        className="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                        <polyline points="22,6 12,13 2,6" />
-                      </svg>
-                    </div>
-                    <div>
-                      <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">
-                        E-mail
-                      </div>
-                      <a
-                        href="mailto:naidionaramaschio.psi@gmail.com"
-                        className="text-sm font-semibold text-[#1e3a5f] hover:text-[#0d9488] leading-snug mt-0.5 block"
-                      >
-                        naidionaramaschio.psi@gmail.com
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-blue-50 text-[#3b6a9a] flex items-center justify-center shrink-0">
-                      <svg
-                        className="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">
-                        Telefone / WhatsApp
-                      </div>
-                      <a
-                        href="https://wa.me/5554997011417?text=Ol%C3%A1%2C%20Naidionara!%20Vim%20pelo%20site%20Cl%C3%ADnica%20Comportar%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20atendimentos."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm font-semibold text-[#1e3a5f] hover:text-[#0d9488] leading-snug mt-0.5 block"
-                      >
-                        +55 (54) 99701-1417
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-blue-50 text-[#3b6a9a] flex items-center justify-center shrink-0">
-                      <svg
-                        className="w-5 h-5"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        viewBox="0 0 24 24"
-                      >
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                      </svg>
-                    </div>
-                    <div>
-                      <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">
-                        Instagram
-                      </div>
-                      <a
-                        href="https://www.instagram.com/psinaidionaramaschio"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm font-semibold text-[#1e3a5f] hover:text-[#0d9488] leading-snug mt-0.5 block"
-                      >
-                        @psinaidionaramaschio
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Box de Localização */}
-              <div className="bg-blue-50/70 rounded-2xl p-4 border border-blue-100 flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-white shadow-xs flex items-center justify-center text-[#3b6a9a] shrink-0">
-                  <svg
-                    className="w-5 h-5"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6" />
-                    <line x1="8" y1="2" x2="8" y2="18" />
-                    <line x1="16" y1="6" x2="16" y2="22" />
-                  </svg>
-                </div>
-                <div>
-                  <div className="text-xs font-bold text-[#1e3a5f]">
-                    Consultório em Dois Vizinhos / PR
-                  </div>
-                  <div className="text-[11px] text-slate-500">
-                    Espaço reservado, confortável e com fácil acesso
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Formulário Interativo */}
-            <div className="lg:col-span-7 bg-white rounded-3xl p-8 border border-slate-200 shadow-xl">
-              <h3 className="text-2xl font-bold text-[#1e3a5f] mb-1">Envie uma Mensagem</h3>
-              <p className="text-sm text-slate-500 mb-6">
-                Preencha os campos abaixo e responderei com a brevidade possível.
-              </p>
-
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start max-w-[980px] mx-auto">
+            {/* Esquerda: Formulário em card branco */}
+            <div className="bg-white rounded-3xl p-7 sm:p-8 border border-blue-100/90 shadow-sm">
               {submitSuccess && (
-                <div className="mb-6 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-sm font-medium">
-                  ✓ Mensagem enviada com sucesso! O WhatsApp foi aberto para prosseguir com o
-                  agendamento.
+                <div className="mb-5 p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs sm:text-sm font-medium">
+                  ✓ Mensagem registrada com sucesso! Abrindo o WhatsApp...
                 </div>
               )}
 
-              <form onSubmit={handleSubmit} noValidate className="space-y-5">
+              <form onSubmit={handleSubmit} noValidate className="space-y-4">
                 <div>
                   <label
                     htmlFor="react-nome"
-                    className="block text-xs font-bold text-[#1e3a5f] uppercase tracking-wider mb-2"
+                    className="block text-xs font-medium text-slate-700 mb-1.5"
                   >
-                    Nome Completo <span className="text-red-500">*</span>
+                    Nome completo
                   </label>
                   <input
                     type="text"
@@ -846,16 +602,16 @@ export default function Index() {
                     name="nome"
                     value={formData.nome}
                     onChange={handleInputChange}
-                    placeholder="Ex.: Maria da Silva"
-                    className={`w-full px-4 py-3 rounded-xl border text-sm transition-all outline-none ${
+                    placeholder="Como você gostaria de ser chamado(a)?"
+                    className={`w-full px-4 py-3 rounded-xl border text-sm transition-all outline-none placeholder:text-slate-400 placeholder:text-xs sm:placeholder:text-sm ${
                       formErrors.nome
-                        ? 'border-red-500 bg-red-50/50 focus:border-red-500'
-                        : 'border-slate-200 bg-white focus:border-[#3b6a9a] focus:ring-2 focus:ring-[#3b6a9a]/20'
+                        ? 'border-red-400 bg-red-50/40 focus:border-red-500'
+                        : 'border-slate-200 bg-white focus:border-[#0d9488] focus:ring-1 focus:ring-[#0d9488]'
                     }`}
                   />
                   {formErrors.nome && (
                     <span className="text-xs text-red-500 font-medium mt-1 block">
-                      Por favor, informe seu nome com pelo menos 3 caracteres.
+                      Por favor, informe seu nome.
                     </span>
                   )}
                 </div>
@@ -863,9 +619,9 @@ export default function Index() {
                 <div>
                   <label
                     htmlFor="react-email"
-                    className="block text-xs font-bold text-[#1e3a5f] uppercase tracking-wider mb-2"
+                    className="block text-xs font-medium text-slate-700 mb-1.5"
                   >
-                    E-mail <span className="text-red-500">*</span>
+                    E-mail
                   </label>
                   <input
                     type="email"
@@ -873,16 +629,16 @@ export default function Index() {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    placeholder="seuemail@exemplo.com"
-                    className={`w-full px-4 py-3 rounded-xl border text-sm transition-all outline-none ${
+                    placeholder="seunome@email.com"
+                    className={`w-full px-4 py-3 rounded-xl border text-sm transition-all outline-none placeholder:text-slate-400 placeholder:text-xs sm:placeholder:text-sm ${
                       formErrors.email
-                        ? 'border-red-500 bg-red-50/50 focus:border-red-500'
-                        : 'border-slate-200 bg-white focus:border-[#3b6a9a] focus:ring-2 focus:ring-[#3b6a9a]/20'
+                        ? 'border-red-400 bg-red-50/40 focus:border-red-500'
+                        : 'border-slate-200 bg-white focus:border-[#0d9488] focus:ring-1 focus:ring-[#0d9488]'
                     }`}
                   />
                   {formErrors.email && (
                     <span className="text-xs text-red-500 font-medium mt-1 block">
-                      Por favor, insira um e-mail válido.
+                      Por favor, informe um e-mail válido.
                     </span>
                   )}
                 </div>
@@ -890,9 +646,9 @@ export default function Index() {
                 <div>
                   <label
                     htmlFor="react-telefone"
-                    className="block text-xs font-bold text-[#1e3a5f] uppercase tracking-wider mb-2"
+                    className="block text-xs font-medium text-slate-700 mb-1.5"
                   >
-                    Telefone / WhatsApp <span className="text-red-500">*</span>
+                    Telefone / WhatsApp
                   </label>
                   <input
                     type="tel"
@@ -900,16 +656,16 @@ export default function Index() {
                     name="telefone"
                     value={formData.telefone}
                     onChange={handlePhoneChange}
-                    placeholder="(00) 00000-0000"
-                    className={`w-full px-4 py-3 rounded-xl border text-sm transition-all outline-none ${
+                    placeholder="+55 (54) 99701-1417"
+                    className={`w-full px-4 py-3 rounded-xl border text-sm transition-all outline-none placeholder:text-slate-400 placeholder:text-xs sm:placeholder:text-sm ${
                       formErrors.telefone
-                        ? 'border-red-500 bg-red-50/50 focus:border-red-500'
-                        : 'border-slate-200 bg-white focus:border-[#3b6a9a] focus:ring-2 focus:ring-[#3b6a9a]/20'
+                        ? 'border-red-400 bg-red-50/40 focus:border-red-500'
+                        : 'border-slate-200 bg-white focus:border-[#0d9488] focus:ring-1 focus:ring-[#0d9488]'
                     }`}
                   />
                   {formErrors.telefone && (
                     <span className="text-xs text-red-500 font-medium mt-1 block">
-                      Informe um telefone válido com DDD (10 ou 11 dígitos).
+                      Informe um telefone válido com DDD.
                     </span>
                   )}
                 </div>
@@ -917,9 +673,9 @@ export default function Index() {
                 <div>
                   <label
                     htmlFor="react-mensagem"
-                    className="block text-xs font-bold text-[#1e3a5f] uppercase tracking-wider mb-2"
+                    className="block text-xs font-medium text-slate-700 mb-1.5"
                   >
-                    Mensagem <span className="text-red-500">*</span>
+                    Mensagem
                   </label>
                   <textarea
                     id="react-mensagem"
@@ -927,11 +683,11 @@ export default function Index() {
                     rows={4}
                     value={formData.mensagem}
                     onChange={handleInputChange}
-                    placeholder="Conte brevemente o motivo do contato ou qual modalidade você busca..."
-                    className={`w-full px-4 py-3 rounded-xl border text-sm transition-all outline-none resize-y ${
+                    placeholder="Conte brevemente o que você busca na terapia e sua disponibilidade de horários."
+                    className={`w-full px-4 py-3 rounded-xl border text-sm transition-all outline-none resize-y placeholder:text-slate-400 placeholder:text-xs sm:placeholder:text-sm ${
                       formErrors.mensagem
-                        ? 'border-red-500 bg-red-50/50 focus:border-red-500'
-                        : 'border-slate-200 bg-white focus:border-[#3b6a9a] focus:ring-2 focus:ring-[#3b6a9a]/20'
+                        ? 'border-red-400 bg-red-50/40 focus:border-red-500'
+                        : 'border-slate-200 bg-white focus:border-[#0d9488] focus:ring-1 focus:ring-[#0d9488]'
                     }`}
                   />
                   {formErrors.mensagem && (
@@ -941,13 +697,142 @@ export default function Index() {
                   )}
                 </div>
 
-                <button
-                  type="submit"
-                  className="w-full py-4 rounded-full bg-[#0d9488] hover:bg-[#0f766e] text-white font-semibold shadow-md hover:shadow-lg transition-all"
-                >
-                  Enviar Mensagem
-                </button>
+                <div className="pt-2">
+                  <button
+                    type="submit"
+                    className="w-full py-3.5 rounded-full bg-[#0d9488] hover:bg-[#0f766e] text-white font-semibold text-sm shadow-sm hover:shadow transition-all"
+                  >
+                    Enviar mensagem
+                  </button>
+                </div>
+
+                <div className="pt-2 text-center">
+                  <p className="text-xs text-slate-400 inline-flex items-center justify-center gap-1.5">
+                    <span>🔒</span>
+                    <span>Suas informações são tratadas com total sigilo profissional.</span>
+                  </p>
+                </div>
               </form>
+            </div>
+
+            {/* Direita: Card com mapa e dados de contato */}
+            <div className="bg-white rounded-3xl p-7 sm:p-8 border border-blue-100/90 shadow-sm flex flex-col justify-between">
+              <div>
+                {/* Retângulo azul-claro com link do mapa */}
+                <a
+                  href="https://maps.google.com/?q=Rua+Esp%C3%ADrito+Santo,+103,+S%C3%A3o+Judas+Tadeu,+Dois+Vizinhos+-+PR"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full h-36 rounded-2xl bg-[#eaf2fd] hover:bg-[#dfeafd] transition-colors flex items-center justify-center text-sm font-medium text-[#2563eb] gap-2 mb-6 group cursor-pointer"
+                >
+                  <span className="text-base">📍</span>
+                  <span className="group-hover:underline">Mapa do consultório</span>
+                </a>
+
+                {/* Itens de contato */}
+                <div className="space-y-4">
+                  {/* Consultório */}
+                  <div className="flex items-start gap-3.5">
+                    <div className="w-9 h-9 rounded-full bg-[#f1f5f9] flex items-center justify-center shrink-0 text-rose-500 text-sm mt-0.5">
+                      📍
+                    </div>
+                    <div>
+                      <div className="text-xs font-bold text-[#1e3a5f]">Consultório</div>
+                      <div className="text-xs text-slate-500 leading-snug mt-0.5">
+                        Rua Espírito Santo, 103
+                      </div>
+                      <div className="text-xs text-slate-500 leading-snug">
+                        São Judas Tadeu, Dois Vizinhos — PR
+                      </div>
+                      <a
+                        href="https://maps.google.com/?q=Rua+Esp%C3%ADrito+Santo,+103,+S%C3%A3o+Judas+Tadeu,+Dois+Vizinhos+-+PR"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-[#2563eb] hover:underline mt-0.5 inline-block"
+                      >
+                        Ver rota no mapa
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* Horário de atendimento */}
+                  <div className="flex items-start gap-3.5">
+                    <div className="w-9 h-9 rounded-full bg-[#f1f5f9] flex items-center justify-center shrink-0 text-slate-500 text-sm mt-0.5">
+                      🕒
+                    </div>
+                    <div>
+                      <div className="text-xs font-bold text-[#1e3a5f]">Horário de atendimento</div>
+                      <div className="text-xs text-slate-500 leading-snug mt-0.5">
+                        Segunda a sexta, a partir das 18h
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* E-mail */}
+                  <div className="flex items-start gap-3.5">
+                    <div className="w-9 h-9 rounded-full bg-[#f1f5f9] flex items-center justify-center shrink-0 text-slate-500 text-sm mt-0.5">
+                      ✉️
+                    </div>
+                    <div>
+                      <div className="text-xs font-bold text-[#1e3a5f]">E-mail</div>
+                      <a
+                        href="mailto:naidionaramaschio.psi@gmail.com"
+                        className="text-xs text-[#2563eb] hover:underline leading-snug mt-0.5 block"
+                      >
+                        naidionaramaschio.psi@gmail.com
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* WhatsApp */}
+                  <div className="flex items-start gap-3.5">
+                    <div className="w-9 h-9 rounded-full bg-[#f1f5f9] flex items-center justify-center shrink-0 text-slate-500 text-sm mt-0.5">
+                      💬
+                    </div>
+                    <div>
+                      <div className="text-xs font-bold text-[#1e3a5f]">WhatsApp</div>
+                      <a
+                        href="https://wa.me/5554997011417?text=Ol%C3%A1%2C%20Naidionara!%20Vim%20pelo%20site%20Cl%C3%ADnica%20Comportar%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20atendimentos."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-slate-600 hover:text-[#0d9488] leading-snug mt-0.5 block"
+                      >
+                        +55 (54) 99701-1417
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* Instagram */}
+                  <div className="flex items-start gap-3.5">
+                    <div className="w-9 h-9 rounded-full bg-[#f1f5f9] flex items-center justify-center shrink-0 text-slate-500 text-sm mt-0.5">
+                      📷
+                    </div>
+                    <div>
+                      <div className="text-xs font-bold text-[#1e3a5f]">Instagram</div>
+                      <a
+                        href="https://www.instagram.com/psinaidionaramaschio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-[#2563eb] hover:underline leading-snug mt-0.5 block"
+                      >
+                        @psinaidionaramaschio
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Botão navy escuro largo */}
+              <div className="mt-8 pt-2">
+                <a
+                  href="https://wa.me/5554997011417?text=Ol%C3%A1%2C%20Naidionara!%20Vim%20pelo%20site%20Cl%C3%ADnica%20Comportar%20e%20gostaria%20de%20agendar%20minha%20primeira%20consulta."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-3.5 rounded-full bg-[#1e3a5f] hover:bg-[#152a45] text-white font-semibold text-sm shadow-sm hover:shadow transition-all inline-flex items-center justify-center"
+                >
+                  Falar agora pelo WhatsApp
+                </a>
+              </div>
             </div>
           </div>
         </div>
