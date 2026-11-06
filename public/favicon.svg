@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nmBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f233a" />
+      <stop offset="100%" stop-color="#1e3a5f" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e2c88a" />
+      <stop offset="50%" stop-color="#c5a55c" />
+      <stop offset="100%" stop-color="#a48133" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo azul-marinho com cantos arredondados -->
+  <rect width="64" height="64" rx="14" fill="url(#nmBg)" />
+
+  <!-- Borda dourada sutil -->
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="url(#goldGrad)" stroke-width="1.2" opacity="0.6" />
+
+  <!-- Monograma NM com serifa clássica inspirado no logo real -->
+  <text
+    x="32"
+    y="42"
+    text-anchor="middle"
+    font-family="'Playfair Display', 'Cinzel', 'Times New Roman', 'Georgia', serif"
+    font-size="30"
+    font-weight="700"
+    fill="url(#goldGrad)"
+    letter-spacing="2"
+  >NM</text>
+
+  <!-- Ponto dourado sutil abaixo -->
+  <circle cx="32" cy="50" r="1.5" fill="#c5a55c" opacity="0.8" />
+</svg>

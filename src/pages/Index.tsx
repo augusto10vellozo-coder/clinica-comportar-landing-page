@@ -139,7 +139,8 @@ export default function Index() {
               href="https://wa.me/5554997011417?text=Ol%C3%A1%2C%20Naidionara!%20Vim%20pelo%20site%20Cl%C3%ADnica%20Comportar%20e%20gostaria%20de%20agendar%20minha%20primeira%20consulta."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-[#0d9488] hover:bg-[#0f766e] text-white text-sm font-semibold shadow-sm hover:shadow-md transition-all duration-200"
+              className="inline-flex items-center justify-center px-6 py-2.5 rounded-full !bg-[#0d9488] hover:!bg-[#0f766e] !text-white text-sm font-semibold shadow-sm hover:shadow-md transition-all duration-200 select-none"
+              style={{ backgroundColor: '#0d9488', color: '#ffffff' }}
             >
               Agendar Consulta
             </a>
@@ -203,7 +204,8 @@ export default function Index() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full text-center py-3 rounded-full bg-[#0d9488] text-white font-semibold shadow-md"
+              className="w-full text-center py-3 rounded-full !bg-[#0d9488] hover:!bg-[#0f766e] !text-white font-semibold shadow-md"
+              style={{ backgroundColor: '#0d9488', color: '#ffffff' }}
             >
               Agendar Consulta
             </a>
