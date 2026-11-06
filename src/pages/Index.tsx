@@ -839,60 +839,53 @@ export default function Index() {
       </section>
 
       {/* Faixa CTA */}
-      <section className="py-16 bg-gradient-to-r from-[#1e3a5f] to-[#172c47] text-white text-center">
-        <div className="max-w-[720px] mx-auto px-5">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">O primeiro passo pode ser hoje</h2>
-          <p className="text-blue-100 text-base mb-8 max-w-xl mx-auto">
-            Priorize sua saúde mental. Agende um horário conveniente e comece seu processo de
-            autoconhecimento e transformação.
+      <section className="py-20 md:py-24 bg-gradient-to-r from-[#173252] via-[#1e3a5f] to-[#2c4e78] text-white text-center">
+        <div className="max-w-[760px] mx-auto px-5">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
+            O primeiro passo pode ser hoje
+          </h2>
+          <p className="text-blue-100/90 text-sm md:text-base leading-relaxed mb-8 max-w-xl mx-auto">
+            Se você chegou até aqui, algo em você já está pedindo cuidado. Vamos começar juntos, no
+            seu tempo.
           </p>
           <a
             href="https://wa.me/5554997011417?text=Ol%C3%A1%2C%20Naidionara!%20Vim%20pelo%20site%20Cl%C3%ADnica%20Comportar%20e%20gostaria%20de%20agendar%20minha%20primeira%20consulta."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-white text-[#1e3a5f] font-bold text-sm shadow-xl hover:bg-blue-50 transition-all"
+            className="inline-flex items-center justify-center px-8 py-3.5 rounded-full !bg-[#0d9488] hover:!bg-[#0f766e] !text-white font-semibold text-sm shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.99] transition-all"
+            style={{ backgroundColor: '#0d9488', color: '#ffffff' }}
           >
-            Agendar Consulta via WhatsApp
+            Agendar Primeira Consulta
           </a>
         </div>
       </section>
 
       {/* Rodapé */}
-      <footer className="bg-[#0f1d30] text-slate-400 py-16 border-t border-white/10">
+      <footer className="bg-[#172e4c] text-slate-300 py-16 border-t border-white/10">
         <div className="max-w-[1140px] mx-auto px-5">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 mb-14">
+            {/* Marca e Resumo */}
             <div className="md:col-span-5">
-              <div className="flex items-center gap-3 mb-3">
+              <div className="flex items-center gap-3 mb-4">
                 <img
                   src={logoUrl}
                   alt="Logo Clínica Comportar"
-                  className="w-10 h-10 rounded-lg object-contain bg-white/10 p-1 border border-white/20"
+                  className="w-10 h-10 rounded-lg object-contain bg-white p-1 border border-white/20 shadow-sm"
                 />
-                <div>
-                  <div className="text-xl font-bold text-white leading-tight">
-                    Clínica Comportar
-                  </div>
-                  <div className="text-[11px] font-semibold text-blue-200 uppercase tracking-wider">
-                    Psicologia Clínica
-                  </div>
-                </div>
+                <div className="text-lg font-bold text-white leading-tight">Clínica Comportar</div>
               </div>
-              <div className="text-xs font-semibold text-blue-200 mb-4">
-                Naidionara Maschio · CRP 08/42488
-              </div>
-              <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
-                Psicoterapia com base na Análise do Comportamento para adultos e idosos. Atendimento
-                humanizado presencial em Dois Vizinhos/PR e online para todo o Brasil e exterior.
+              <p className="text-xs md:text-sm text-slate-300/90 leading-relaxed max-w-md">
+                Um espaço seguro para o seu autoconhecimento e bem-estar emocional. Psicoterapia
+                individual para adultos e idosos, presencial em Dois Vizinhos, PR e online para todo
+                o Brasil. Consultoria em recrutamento e seleção.
               </p>
             </div>
 
+            {/* Navegação */}
             <div className="md:col-span-3">
-              <div className="text-sm font-bold text-white mb-4 uppercase tracking-wider">
-                Navegação
-              </div>
-              <ul className="space-y-2 text-sm">
+              <div className="text-sm font-bold text-white mb-4">Navegação</div>
+              <ul className="space-y-2.5 text-xs md:text-sm text-slate-300/90">
                 {[
-                  { label: 'Início', href: '#inicio' },
                   { label: 'Sobre Mim', href: '#sobre' },
                   { label: 'Abordagem', href: '#abordagem' },
                   { label: 'Serviços', href: '#servicos' },
@@ -908,40 +901,36 @@ export default function Index() {
               </ul>
             </div>
 
+            {/* Contato */}
             <div className="md:col-span-4">
-              <div className="text-sm font-bold text-white mb-4 uppercase tracking-wider">
-                Atendimento
-              </div>
-              <ul className="space-y-2.5 text-sm">
-                <li>Rua Espírito Santo, 103 — Dois Vizinhos/PR</li>
-                <li>Segunda a sexta, a partir das 18h</li>
+              <div className="text-sm font-bold text-white mb-4">Contato</div>
+              <ul className="space-y-2.5 text-xs md:text-sm text-slate-300/90">
+                <li>Rua Espírito Santo, 103</li>
+                <li>São Judas Tadeu, Dois Vizinhos — PR</li>
                 <li>
-                  WhatsApp:{' '}
-                  <a
-                    href="https://wa.me/5554997011417?text=Ol%C3%A1%2C%20Naidionara!%20Vim%20pelo%20site%20Cl%C3%ADnica%20Comportar."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-white transition-colors font-medium text-slate-300"
-                  >
-                    +55 (54) 99701-1417
-                  </a>
-                </li>
-                <li>
-                  E-mail:{' '}
                   <a
                     href="mailto:naidionaramaschio.psi@gmail.com"
-                    className="hover:text-white transition-colors font-medium text-slate-300"
+                    className="hover:text-white transition-colors"
                   >
                     naidionaramaschio.psi@gmail.com
                   </a>
                 </li>
                 <li>
-                  Instagram:{' '}
+                  <a
+                    href="https://wa.me/5554997011417?text=Ol%C3%A1%2C%20Naidionara!%20Vim%20pelo%20site%20Cl%C3%ADnica%20Comportar."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors"
+                  >
+                    +55 (54) 99701-1417
+                  </a>
+                </li>
+                <li>
                   <a
                     href="https://www.instagram.com/psinaidionaramaschio"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-white transition-colors font-medium text-slate-300"
+                    className="hover:text-white transition-colors"
                   >
                     @psinaidionaramaschio
                   </a>
@@ -950,11 +939,9 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-            <div>
-              &copy; {new Date().getFullYear()} Clínica Comportar — Todos os direitos reservados.
-            </div>
-            <div>Naidionara Maschio — Psicóloga Clínica e Organizacional (CRP 08/42488)</div>
+          <div className="pt-8 border-t border-white/10 text-center text-xs text-slate-400">
+            &copy; {new Date().getFullYear()} Clínica Comportar — Naidionara Maschio, CRP 08/42488.
+            Todos os direitos reservados.
           </div>
         </div>
       </footer>
