@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import photoUrl from '@/assets/image-2d172.png'
+import logoUrl from '@/assets/image-9b520.png'
 
 export default function Index() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null)
@@ -98,9 +100,9 @@ export default function Index() {
         <div className="max-w-[1140px] mx-auto px-5 h-full flex items-center justify-between">
           <a href="#inicio" className="flex items-center gap-3 group">
             <img
-              src="/images/logo.jpg"
-              alt="Logo Clínica Comportar"
-              className="w-10 h-10 rounded-lg object-cover shadow-sm bg-blue-50 border border-slate-200"
+              src={logoUrl}
+              alt="Logo Clínica Comportar - Monograma NM"
+              className="w-10 h-10 rounded-lg object-contain shadow-sm bg-white border border-slate-200 p-0.5"
             />
             <div className="flex flex-col">
               <span className="text-lg font-bold text-[#1e3a5f] leading-tight">
@@ -310,8 +312,8 @@ export default function Index() {
             <div className="md:col-span-5 relative">
               <div className="rounded-[24px] overflow-hidden shadow-lg bg-blue-50">
                 <img
-                  src="/images/psicologa.jpg"
-                  alt="Naidionara Maschio"
+                  src={photoUrl}
+                  alt="Naidionara Maschio — Psicóloga Clínica e Organizacional, CRP 08/42488"
                   className="w-full h-auto object-cover"
                 />
               </div>
@@ -973,7 +975,21 @@ export default function Index() {
         <div className="max-w-[1140px] mx-auto px-5">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
             <div className="md:col-span-5">
-              <div className="text-xl font-bold text-white mb-1">Clínica Comportar</div>
+              <div className="flex items-center gap-3 mb-3">
+                <img
+                  src={logoUrl}
+                  alt="Logo Clínica Comportar"
+                  className="w-10 h-10 rounded-lg object-contain bg-white/10 p-1 border border-white/20"
+                />
+                <div>
+                  <div className="text-xl font-bold text-white leading-tight">
+                    Clínica Comportar
+                  </div>
+                  <div className="text-[11px] font-semibold text-blue-200 uppercase tracking-wider">
+                    Psicologia Clínica
+                  </div>
+                </div>
+              </div>
               <div className="text-xs font-semibold text-blue-200 mb-4">
                 Naidionara Maschio · CRP 08/42488
               </div>
